@@ -1,7 +1,8 @@
-import Hero from "./Components/Hero"
-import Home from "./Components/Home"
-import Navbar from "./Components/Navbar"
-import Description from "./Components/Description"
+
+import Description from "./components/Description"
+import Hero from "./components/Hero"
+import Home from "./components/Home"
+import Navbar from "./components/Navbar"
 const App = () => {
   return (
     <div>
