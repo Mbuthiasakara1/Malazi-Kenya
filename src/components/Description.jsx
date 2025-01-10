@@ -4,7 +4,7 @@ export default function Description() {
   return (
     <div className="container">
       <h1>Why Choose Us</h1>
-      <div className="content-info">
+      <div className="desc-info">
         <div className="content-image">
           <img src="images/better.jpg" alt="phone-display" />
         </div>
@@ -52,6 +52,6 @@ export default function Description() {
         </div>
       </div>
     </div>
-    
+
   );
 }
