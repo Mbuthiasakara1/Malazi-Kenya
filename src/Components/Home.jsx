@@ -51,11 +51,12 @@ export default function Home() {
             <p>
               We believe housing is essential and have the capacity to handle
               complex developments, from single units to multi-storey buildings.
-              With over twenty years of experience in residential and commercial projects.
+              With over twenty years of experience in residential and commercial
+              projects.
             </p>
             <button
               className="learn-more-btn"
-              onClick={() => navigate("/Our Services")}
+              onClick={() => navigate("/services")}
             >
               Learn More
             </button>
@@ -71,7 +72,7 @@ export default function Home() {
             </p>
             <button
               className="learn-more-btn"
-              onClick={() => navigate("/Our Services")}
+              onClick={() => navigate("/services")}
             >
               Learn More
             </button>
@@ -89,7 +90,7 @@ export default function Home() {
             </p>
             <button
               className="learn-more-btn"
-              onClick={() => navigate("/Our Services")}
+              onClick={() => navigate("/services")}
             >
               Learn More
             </button>
