@@ -1,7 +1,7 @@
 import {useNavigate} from "react-router-dom";
 import './Home.css'
 
-export default function Home() {
+function Home() {
   const navigate=useNavigate()
   return (
     <>
@@ -15,22 +15,22 @@ export default function Home() {
               both Kenya and the United States. As a proud member of the Acacia
               Group, we bring world-class construction expertise to East Africa
               while maintaining our headquarters in Wichita, Kansas.
+              <br /><br />
               <p>
-                As part ofthe Acacia Group, a real estate ﬁrm headquartered in
+                As part of the Acacia Group, a real estate ﬁrm headquartered in
                 Kansas, we strive to enhance value for money by providing
                 quality and affordability at all levels. Our team comprises
                 professionals in architecture, civil engineering, building
                 technology, project management, and ﬁnance. We prioritize our
                 clients and are committed to superior quality and results,
-                reﬂected in our motto
+                reﬂected in our motto: &nbsp;
                 <span>
-                  {" "}
-                  <strong>Committed to Superior Quality and Results</strong>
+                  <strong>{'"Committed to Superior Quality and Results"'}</strong> 
                 </span>
               </p>
             </p>
             <div className="content-btn">
-              <button onClick={() => navigate("/About us")}>Learn More </button>
+              <button onClick={() => navigate("/about")}>Learn More </button>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ export default function Home() {
             <h2>Roads, Bridges and Marine Engineering Works</h2>
             <p>
               Construction of roads, bridges, and marine engineering works using
-              cutting-edge machinery and technology.
+              cutting-edge machinery and technology. Airports and Seaports development. 
             </p>
             <button
               className="learn-more-btn"
@@ -99,3 +99,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home
