@@ -33,7 +33,6 @@ function Home() {
               <button onClick={() => navigate("/about")}> Learn More </button>
             </div>
           </div>
-
           <img
             src="images/tractor.jpg"
             alt="tractor-image"

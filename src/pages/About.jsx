@@ -54,7 +54,7 @@ function About() {
                     <h1>Our Values</h1>
                     <div className='value-list'>
                         <div className='value'>
-                            <GiBullseye />
+                            <img src = 'images/okay.png' alt='Quality'/>
                             <div>
                                 <h2>Quality</h2>
                                 <p>
@@ -63,7 +63,7 @@ function About() {
                             </div>
                         </div>
                         <div className='value'>
-                            <GiBullseye />
+                        <img src = 'images/saving.png' alt='Integrity'/>
                             <div>
                                 <h2>Integrity</h2>
                                 <p>
@@ -72,7 +72,7 @@ function About() {
                             </div>
                         </div>
                         <div className='value'>
-                            <GiBullseye />
+                        <img src = 'images/fast.png' alt='Satisfaction'/>
                             <div>
                                 <h2>Client Satisfaction</h2>
                                 <p>
@@ -81,7 +81,7 @@ function About() {
                             </div>
                         </div>
                         <div className='value'>
-                            <GiBullseye />
+                        <img src = 'images/innovate.png' alt='Innovation'/>
                             <div>
                                 <h2>Innovation</h2>
                                 <p>
@@ -90,7 +90,7 @@ function About() {
                             </div>
                         </div>
                         <div className='value'>
-                            <GiBullseye />
+                        <img src = 'images/drop.png' alt='Sustainability'/>
                             <div>
                                 <h2>Sustainability</h2>
                                 <p>
