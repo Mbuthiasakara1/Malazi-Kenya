@@ -1,3 +1,4 @@
+import AnimatedNumber from "./Animated";
 import "./Description.css";
 
 export default function Description() {
@@ -48,6 +49,26 @@ export default function Description() {
               <img src="icons/service.svg" alt="excellent service" />
             </div>
             <p>Excellent service</p>
+          </div>
+        </div>
+      </div>
+      <div className="animated-container">
+        <div className="animated-num">
+          <div className="animated-styles">
+            <AnimatedNumber targetValue={9} suffix="+" duration={2000} />
+            <p> Years of Experience</p>
+          </div>
+          <div className="animated-styles">
+            <AnimatedNumber targetValue={94} suffix="+" duration={2000} />
+            <p> Complete Total Projects</p>
+          </div>
+          <div className="animated-styles">
+            <AnimatedNumber targetValue={100} suffix="%" duration={2000} />
+          <p>Efficiency</p>
+          </div>
+          <div className="animated-styles">
+            <AnimatedNumber targetValue={100} suffix="+" duration={2000} />
+          <p>Happy Clients</p>
           </div>
         </div>
       </div>
