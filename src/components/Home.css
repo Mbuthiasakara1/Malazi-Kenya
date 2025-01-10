@@ -52,7 +52,7 @@
     color:black;
 }
 .clipped-image {
-   clip-path: ellipse(40% 50% at 50% 50%); 
+   clip-path: ellipse(40% 45% at 50% 50%); 
    object-fit:cover;
    width:50%;
    height:auto;

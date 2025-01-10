@@ -10,13 +10,12 @@ h1{
     font-size:48px;
     text-align:center;
 }
-.content-info{
+.desc-info{
     display:flex;
     justify-content:center;
-    align-items:flex-start;
+    align-items:center;
     gap:50px;
     /* border:2px solid black; */
-    flex-direction:row;
 }
 .content-image{
     flex:1;
@@ -37,7 +36,6 @@ h1{
     gap:20px;
     justify-content:flex-start;
     align-items:center;
-    margin-top:100px;
 }
 
 .feature{

@@ -30,7 +30,7 @@ function Home() {
               </p>
             </p>
             <div className="content-btn">
-              <button onClick={() => navigate("/about")}>Learn More </button>
+              <button onClick={() => navigate("/about")}> Learn More </button>
             </div>
           </div>
 
