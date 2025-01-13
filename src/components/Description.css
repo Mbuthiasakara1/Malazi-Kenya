@@ -14,14 +14,13 @@
     justify-content:center;
     align-items:center;
     gap:50px;
-    /* border:2px solid black; */
+   
 }
 .content-image{
     flex:1;
     max-width:50%;
-    border:2px solid red;
     text-align:center;
-    /* display:inline-block; */
+  
 }
 .content-image img{
     width:75%;
@@ -30,7 +29,6 @@
 }
 .features{
     flex:1;
-    border:2px solid magenta;
     display:flex;
     flex-wrap:wrap;
     gap:20px;
