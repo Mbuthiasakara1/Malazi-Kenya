@@ -62,7 +62,8 @@
   
   .clipped-image {
     flex: 1;
-    clip-path: circle(50% at 50% 50%);
+    /* clip-path: ellipse(50%  50% at 50% 50%); */
+    clip-path: ellipse(39% 40% at 50% 50%);
     width: 100px; 
     object-fit: cover;
     height:auto;
