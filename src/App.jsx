@@ -1,6 +1,6 @@
 
 import Description from "./components/Description"
-
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Home from "./components/Home"
 import Navbar from "./components/Navbar"
@@ -10,8 +10,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <Home />
-      <Description/>
-     
+      <Description />
+      <Footer /> 
     </div>
   )
 }
