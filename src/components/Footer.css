@@ -5,6 +5,7 @@
     padding: 1em 2em;
     position: relative;
     overflow: hidden;
+    bottom:0;
 }
 .footer-wave {
     position: absolute;

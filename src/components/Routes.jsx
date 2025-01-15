@@ -3,7 +3,8 @@ import App from "../App";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Services from "../pages/Services";
-
+import Portfolio from "../pages/Portfolio";
+import ProjectGallery from "./ProjectGallery";
 
 
 const routes = [
@@ -22,6 +23,14 @@ const routes = [
   {
     path: "/services",
     element: <Services />,
+  },
+  {
+    path: "/portfolio",
+    element: <Portfolio />,
+  },
+  {
+    path: "/portfolio/:projectId",
+    element: <ProjectGallery/>,
   },
 ];
             

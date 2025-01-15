@@ -28,7 +28,7 @@ function Footer() {
         <div className='footer-info'>
             <h3>Malazi Kenya</h3>
             <p>
-                Have an idea? Reach out to us and let's talk about it.
+                Have an idea? Reach out to us and { "let's"} talk about it.
             </p>
         </div>
         <div className='quick-links'>

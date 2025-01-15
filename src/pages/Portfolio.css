@@ -1,0 +1,22 @@
+.portfolio-container{
+    margin-bottom:4em;
+    margin-top:30em;
+}
+
+.porfolio-image{
+    width:100%;
+    height:30vh;
+    object-fit:cover;
+}
+.porfolio-container-content{
+    position:absolute;
+    width:100%;
+    margin-top:8em;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    border:1px solid red;
+
+
+}
