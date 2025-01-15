@@ -73,6 +73,5 @@ export default function Description() {
         </div>
       </div>
     </div>
-
   );
 }

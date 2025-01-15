@@ -1,5 +1,5 @@
-
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import './About.css'
 import { VscTelescope } from "react-icons/vsc";
 import { GiBullseye } from "react-icons/gi";
@@ -54,53 +54,54 @@ function About() {
                     <h1>Our Values</h1>
                     <div className='value-list'>
                         <div className='value'>
-                            <img src = 'images/okay.png' alt='Quality'/>
+                            <img src='images/okay.png' alt='Quality' />
                             <div>
                                 <h2>Quality</h2>
                                 <p>
-                                Commitment to excellence in every project we undertake.
+                                    Commitment to excellence in every project we undertake.
                                 </p>
                             </div>
                         </div>
                         <div className='value'>
-                        <img src = 'images/saving.png' alt='Integrity'/>
+                            <img src='images/saving.png' alt='Integrity' />
                             <div>
                                 <h2>Integrity</h2>
                                 <p>
-                                Maintaining transparency and honesty in all our dealings.
+                                    Maintaining transparency and honesty in all our dealings.
                                 </p>
                             </div>
                         </div>
                         <div className='value'>
-                        <img src = 'images/fast.png' alt='Satisfaction'/>
+                            <img src='images/fast.png' alt='Satisfaction' />
                             <div>
                                 <h2>Client Satisfaction</h2>
                                 <p>
-                                Striving to exceed client expectations through exceptional service.
+                                    Striving to exceed client expectations through exceptional service.
                                 </p>
                             </div>
                         </div>
                         <div className='value'>
-                        <img src = 'images/innovate.png' alt='Innovation'/>
+                            <img src='images/innovate.png' alt='Innovation' />
                             <div>
                                 <h2>Innovation</h2>
                                 <p>
-                                Continuously improving our methods and embracing new technologies.
+                                    Continuously improving our methods and embracing new technologies.
                                 </p>
                             </div>
                         </div>
                         <div className='value'>
-                        <img src = 'images/drop.png' alt='Sustainability'/>
+                            <img src='images/drop.png' alt='Sustainability' />
                             <div>
                                 <h2>Sustainability</h2>
                                 <p>
-                                Ensuring our projects are environmentally friendly and socially responsible.
+                                    Ensuring our projects are environmentally friendly and socially responsible.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
 
     )
