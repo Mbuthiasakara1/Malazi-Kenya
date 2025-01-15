@@ -3,6 +3,7 @@
     display:flex;
     flex-direction:column;
     align-items:center;
+    margin-bottom: 3em;
 }
 
 .service-info{
@@ -51,7 +52,7 @@
     border-radius: 8px;
     cursor: pointer;
     width:147px;
-    heigh:39px;
+    height:39px;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   

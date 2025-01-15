@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar"
 import './Services.css'
 import { useNavigate } from "react-router-dom";
@@ -104,7 +105,7 @@ import { useNavigate } from "react-router-dom";
           <img src="services/energy.jpg" alt="renewable-energy" />
         </div>
       </div>
-    
+    <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 import "../components/ContactForm.css";
 import "./Contact.css";
+import Footer from "../components/Footer";
 
 
 function Contact() {
@@ -41,8 +42,8 @@ function Contact() {
           <div className="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7983853397336!2d36.775190075504746!3d-1.2955571356374396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a0b49aca23b%3A0x64b1629aa01be05a!2sBloomfield%20Apartments!5e0!3m2!1sen!2ske!4v1736773125316!5m2!1sen!2ske"
-              width="800"
-              height="500"
+              width="600"
+              height="460"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
@@ -51,6 +52,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -6,7 +6,6 @@ import routes from './components/Routes.jsx'
 
 const router = createBrowserRouter(routes)
 
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
