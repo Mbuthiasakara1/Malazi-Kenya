@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function AnimatedNumber({ targetValue, suffix = '', duration = 2000 }) {
     const [count, setCount] = useState(0)

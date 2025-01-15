@@ -26,8 +26,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <button className='nav-btn'>
-      Company Profile <MdOutlineFileDownload />
-      </button>
+      Company Profile <MdOutlineFileDownload /> </button>
     </div>
     <hr />
     </>
