@@ -17,7 +17,7 @@ function ProjectGallery() {
     ],
     2: [
       { img: "/images/waterfall.jpg" },
-      { img: "/images/development.jpg" },
+      { img: "/images/waterfall.jpg" },
       { img: "/images/waterfall.jpg" },
     ],
     3: [
