@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Navbar from '../components/Navbar';
 import "./Portfolio.css"
 import PortfolioImages from '../components/PortfolioImages';
