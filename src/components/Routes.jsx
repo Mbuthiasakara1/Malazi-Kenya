@@ -5,7 +5,6 @@ import Contact from "../pages/Contact";
 import Services from "../pages/Services";
 import Portfolio from "../pages/Portfolio";
 import ProjectGallery from "./ProjectGallery";
-import ImageDetail from "./ImageDetail";
 
 
 const routes = [
@@ -31,11 +30,7 @@ const routes = [
   },
   {
     path: "/portfolio/:projectId",
-    element: <ProjectGallery />,
-  },
-  {
-    path: "/portfolio/:projectId/image/:imageIndex",
-    element: <ImageDetail />,
+    element: <ProjectGallery/>,
   },
 ];
             

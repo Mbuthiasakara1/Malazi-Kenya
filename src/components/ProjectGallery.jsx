@@ -1,20 +1,13 @@
-
-
+import React from "react";
 import Navbar from "./Navbar";
+import Projects from "./Projects";
 import Footer from "./Footer";
-import "./ProjectGallery.css";
-import {
-  Box,
-  ImageList,
-  ImageListItem,
-  Button,
-  Typography,
-} from "@mui/material";
+import './ProjectGallery.css'
 import { useNavigate, useParams } from "react-router-dom";
 
-const PortfolioGallery = () => {
-  const navigate = useNavigate();
+function ProjectGallery() {
   const { projectId } = useParams();
+  const navigate = useNavigate()
 
   const projectImages = {
     1: [
@@ -24,7 +17,7 @@ const PortfolioGallery = () => {
     ],
     2: [
       { img: "/images/waterfall.jpg" },
-      { img: "/images/development.jpg" },
+      { img: "/images/waterfall.jpg" },
       { img: "/images/waterfall.jpg" },
     ],
     3: [
@@ -39,6 +32,7 @@ const PortfolioGallery = () => {
     "Apartment Blocks in Nairobi",
     "Ndagani Modern Market",
     "Kathwana Ablution Block",
+    "Kathwana Ablution Block",
   ];
 
   const galleryImages = projectImages[projectId] || [];
@@ -47,46 +41,39 @@ const PortfolioGallery = () => {
     navigate(`/portfolio/${projectId}/image/${index}`);
   };
 
+  // Get the first image associated with the projectId
+  const image = projectImages[projectId]?.[0]; // Safely access the first image
+  const projectTitle = projects[projectId]; // Get the project title
+
   return (
     <>
       <Navbar />
-      <Box sx={{ p: 4 }} className="gallery-container">
-        <Button onClick={() => navigate("/portfolio")} sx={{ mb: 3 }}>
-          Back to Portfolio
-        </Button>
-
-        <Typography variant="h4" sx={{ mb: 4 }}>
-          {projects[projectId]}
-        </Typography>
-
-        <ImageList cols={3} gap={16}>
-          {galleryImages.map((item, index) => (
-            <ImageListItem
-              key={index}
-              sx={{
-                cursor: "pointer",
-                "& img": {
-                  transition: "opacity 0.3s",
-                  ":hover": {
-                    opacity: 0.6,
-                  },
-                },
-              }}
-              onClick={() => handleImageClick(index)}
-            >
-              <img
-                src={item.img}
-                alt={`Gallery image ${index + 1}`}
-                loading="lazy"
-                style={{ height: "200px", objectFit: "cover" }}
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Box>
+      <div className='header-container'>
+        {image && (
+          <>
+            <img
+              src={image.img}
+              alt={`Project ${projectId}`}
+              className="project-header"
+            />
+            <div className="project-text">
+              <h1>
+                {projectTitle}
+              </h1>
+            </div>
+          </>
+        )}
+        {!image && <p>No image available for this project.</p>}
+      </div>
+      <Projects
+        projects={projects}
+        projectImages={projectImages}
+        projectId={projectId}
+        onImageClick = {handleImageClick}
+      />
       <Footer />
     </>
   );
-};
+}
 
-export default PortfolioGallery;
+export default ProjectGallery;

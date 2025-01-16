@@ -38,7 +38,7 @@ import './Hero.css'
                   <div className="swiper-btn">
                     <button
                       className="hero-btn"
-                      onClick={() => navigate("/projects")}
+                      onClick={() => navigate("/portfolio")}
                     >
                       <span>Learn More</span>
                     </button>

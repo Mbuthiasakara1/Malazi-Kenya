@@ -101,7 +101,7 @@ export default function Description() {
             </div>
           </div>
         </div>
-        <button className="other-projects-btn" onClick={() => navigate("/projects")}>
+        <button className="other-projects-btn" onClick={() => navigate("/portfolio")}>
 
         
           Other Projects  <HiArrowLongRight/> 

@@ -1,9 +1,19 @@
-
 import './Navbar.css'
 import { NavLink} from 'react-router-dom'
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Navbar = () => {
+
+  const handleDownload = () => {
+    const filePath = "/downloads/Malazi_Kenya_Profile.pdf"; // Path to the file in the public folder
+    const link = document.createElement("a");
+    link.href = filePath;
+    link.download = "Malazi Kenya Profile.pdf"; // Suggested filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
     <div className='nav-container'>
@@ -25,7 +35,7 @@ const Navbar = () => {
           <li> <NavLink to = "/contact">Contact Us</NavLink> </li>
         </ul>
       </nav>
-      <button className='nav-btn'>
+      <button className='nav-btn' onClick={handleDownload}>
       Company Profile <MdOutlineFileDownload /> </button>
     </div>
     <hr />
