@@ -76,9 +76,10 @@ const Portfolio = () => {
 
       <Container maxWidth="lg" sx={{ py: 4 }} className="portfolio-container">
         <div className="porfolio-container-content">
-          <img src="images/homebg.jpg" />
+          <img src="images/homebg.jpg"  alt="Portfolio-Background" />
+          <h1 className="porfolio-title">PORTFOLIO</h1>
         </div>
-        <ImageList cols={3} gap={16}>
+        <ImageList cols={3} gap={16} className="portfolio-image-container">
           {portfolioItems.map((item) => (
             <ImageListItem
               key={item.id}
@@ -89,7 +90,7 @@ const Portfolio = () => {
                 src={item.img}
                 alt={item.title}
                 loading="lazy"
-                style={{ height: "200px", objectFit: "cover" }}
+                style={{ height:"200px", objectFit: "cover" }}
               />
               <ImageListItemBar title={item.title} position="below" />
             </ImageListItem>

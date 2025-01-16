@@ -1,6 +1,8 @@
+
+
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import "./ProjectGallery.css"
+import "./ProjectGallery.css";
 import {
   Box,
   ImageList,
@@ -22,7 +24,7 @@ const PortfolioGallery = () => {
     ],
     2: [
       { img: "/images/waterfall.jpg" },
-      { img: "/images/waterfall.jpg" },
+      { img: "/images/development.jpg" },
       { img: "/images/waterfall.jpg" },
     ],
     3: [
@@ -36,10 +38,15 @@ const PortfolioGallery = () => {
     "",
     "Apartment Blocks in Nairobi",
     "Ndagani Modern Market",
-    "Kathwana ablution block",
+    "Kathwana Ablution Block",
   ];
 
   const galleryImages = projectImages[projectId] || [];
+
+  const handleImageClick = (index) => {
+    navigate(`/portfolio/${projectId}/image/${index}`);
+  };
+
   return (
     <>
       <Navbar />
@@ -65,7 +72,7 @@ const PortfolioGallery = () => {
                   },
                 },
               }}
-              onClick={() => console.log(`Clicked on image ${index + 1}`)}
+              onClick={() => handleImageClick(index)}
             >
               <img
                 src={item.img}
