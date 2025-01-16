@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-const Projects = ({ projects, projectImages, projectId, onImageClick }) => {
+const Projects = ({ projectImages, projectId, onImageClick }) => {
 
   const navigate = useNavigate();
   const galleryImages = projectImages[projectId] || [];
