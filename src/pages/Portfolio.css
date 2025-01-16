@@ -22,7 +22,7 @@
 }
 
 .porfolio-container-content::after {
-  content: 'PORTFOLIO';
+  content: 'portfolio';
   position: absolute;
   top: 50%;
   left: 50%;
