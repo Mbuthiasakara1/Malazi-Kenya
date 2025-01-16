@@ -8,9 +8,11 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-const Projects = ({ projects, projectImages, projectId }) => {
+const Projects = ({ projects, projectImages, projectId, onImageClick }) => {
+
   const navigate = useNavigate();
   const galleryImages = projectImages[projectId] || [];
+
   return (
     <>
       <Box sx={{ p: 4 }} className="gallery-container">
@@ -35,7 +37,7 @@ const Projects = ({ projects, projectImages, projectId }) => {
                   },
                 },
               }}
-              onClick={() => console.log(`Clicked on image ${index + 1}`)}
+              onClick={() => onImageClick(index)}
             >
               <img
                 src={item.img}

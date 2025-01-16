@@ -52,4 +52,12 @@
     border-radius: 4px;
     font-size: 16px;
     margin-right: 2em;
+    cursor: pointer;
+}
+.nav-btn:hover{
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #000;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }

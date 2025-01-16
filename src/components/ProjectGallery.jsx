@@ -3,10 +3,11 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Footer from "./Footer";
 import './ProjectGallery.css'
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function ProjectGallery() {
   const { projectId } = useParams();
+  const navigate = useNavigate()
 
   const projectImages = {
     1: [
@@ -16,7 +17,7 @@ function ProjectGallery() {
     ],
     2: [
       { img: "/images/waterfall.jpg" },
-      { img: "/images/waterfall.jpg" },
+      { img: "/images/development.jpg" },
       { img: "/images/waterfall.jpg" },
     ],
     3: [
@@ -31,7 +32,14 @@ function ProjectGallery() {
     "Apartment Blocks in Nairobi",
     "Ndagani Modern Market",
     "Kathwana Ablution Block",
+    "Kathwana Ablution Block",
   ];
+
+  const galleryImages = projectImages[projectId] || [];
+
+  const handleImageClick = (index) => {
+    navigate(`/portfolio/${projectId}/image/${index}`);
+  };
 
   // Get the first image associated with the projectId
   const image = projectImages[projectId]?.[0]; // Safely access the first image
@@ -61,6 +69,7 @@ function ProjectGallery() {
         projects={projects}
         projectImages={projectImages}
         projectId={projectId}
+        onImageClick = {handleImageClick}
       />
       <Footer />
     </>
