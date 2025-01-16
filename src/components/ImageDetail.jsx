@@ -44,6 +44,7 @@ const ImageDetail = () => {
   const handleNext = () => {
     setCurrentIndex((prev) => Math.min(prev + 1, images.length - 1));
   };
+ 
 
   return (
     <Box
@@ -56,9 +57,13 @@ const ImageDetail = () => {
         bgcolor: "black",
       }}
     >
+
+     
       <IconButton
         onClick={handlePrev}
-        sx={{ position: "absolute", left: 16, color: "white" }}
+        sx={{ position: "absolute",
+             left: 16,
+             color: "white" }}
         disabled={currentIndex === 0}
       >
         <ArrowBackIcon />

@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className='nav-container'>
       <div className='logo-container'>
         <img
-        src='images/logo.jpeg'
+        src='/images/logo.jpeg'
         alt='malazi-logo'
         className='logo'
       />
