@@ -21,7 +21,7 @@ function Footer() {
         ></path>
       </svg>
         <img
-            src='images/no-background.png'
+            src='/images/no-background.png'
             alt='Logo'
             className='footer-logo'
         />

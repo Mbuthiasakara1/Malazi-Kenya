@@ -35,8 +35,6 @@ function ProjectGallery() {
     "Kathwana Ablution Block",
   ];
 
-  const galleryImages = projectImages[projectId] || [];
-
   const handleImageClick = (index) => {
     navigate(`/portfolio/${projectId}/image/${index}`);
   };
