@@ -75,6 +75,9 @@
 }
 
 @media (max-width: 768px) {
+    .logo{
+        margin-left: 0;
+    }
     .nav-container {
         justify-content: space-between;
         width: 100%;

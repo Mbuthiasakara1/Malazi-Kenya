@@ -82,10 +82,6 @@
   .swiper{
     height: 70vh;
   }
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none !important;
-  }
   .swiper-images{
     height: 100%;
   }
@@ -101,6 +97,10 @@
 @media(max-width:430px){
   .swiper{
     height: 60vh;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
   }
   .swiper-images{
     height: 100%;
