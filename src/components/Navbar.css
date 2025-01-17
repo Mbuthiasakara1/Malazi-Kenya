@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     gap: 1em;
+    cursor: pointer;
 }
 .logo-container h2{
     color: #BC1F28
