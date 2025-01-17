@@ -107,7 +107,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .contact-container h1 {
     font-size: 20px; /* Further reduce heading font size */
     margin-bottom: 12px;

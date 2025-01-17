@@ -124,7 +124,7 @@
         margin-right: 0;
     }
 }
-@media(max-width:360px){
+@media(max-width:430px){
     .menu-container{
         width: 100%;
     }
