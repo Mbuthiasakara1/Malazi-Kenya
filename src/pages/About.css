@@ -146,4 +146,140 @@
     grid-column: 2;
     width: 35em;
   }
+
+@media (max-width: 768px) {
+  .about-container {
+    margin: 6em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    margin-top: 3em; /* Reduce top margin */
+    flex-direction: column; /* Ensure the layout stacks */
+    padding: 0;
+    width: 95%;
+  }
+
+  .about-info h1 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .about-info p {
+    font-size: 14px; /* Adjust text size */
+    line-height: 1.4em;
+    width: 100%; /* Full width */
+  }
+
+  .about-img {
+    width: 100%; /* Full-width image */
+    height: 20em; /* Maintain aspect ratio */
+    margin-bottom: 1.5em;
+  }
+
+  .vision-mission {
+    margin-top: 1.5em;
+    flex-direction: column; /* Stack vision and mission */
+    align-items: center;
+  }
+
+  .vis-mis-container {
+    flex-direction: column; /* Stack vision and mission items */
+    gap: 1.5em; /* Adjust gap between sections */
+    width: 90%;
+  }
+
+  .vis-mis {
+    width: 100%; /* Full-width section */
+  }
+
+  .vis-mis span {
+    flex-direction: column; /* Stack icon and title */
+    align-items: center;
+    text-align: center;
+  }
+
+  .vis-mis svg {
+    font-size: 2rem; /* Adjust icon size */
+  }
+
+  .vis-mis p {
+    font-size: 14px; /* Adjust text size */
+    line-height: 1.4em;
+  }
+
+  .value-container {
+    padding: 1em; /* Reduce padding */
+  }
+
+  .value-container h1 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .value-list {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 1em;
+  }
+
+  .value {
+    width: 100%; /* Full-width value cards */
+    height: auto; /* Auto-adjust height */
+    padding: 1em; /* Adjust padding */
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center-align content */
+    text-align: center;
+  }
+
+  .value img {
+    width: 3em; /* Adjust image size */
+    margin-bottom: 0; /* Add spacing below image */
+  }
+
+  .value h2 {
+    font-size: 1rem; /* Adjust font size */
+    margin-bottom: 0.3em;
+  }
+
+  .value p {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+  .value:nth-child(1) {
+    grid-row: 1; 
+    grid-column: 1;
+    width: 300px;
+  }
   
+  .value:nth-child(2) {
+    grid-row: 2; 
+    grid-column: 1;
+    width: 300px;
+  }
+  
+  .value:nth-child(3) {
+    grid-row: 3; 
+    grid-column: 1; 
+    width: 300px;
+  }
+  
+  .value:nth-child(4) {
+    grid-row: 4; 
+    grid-column: 1;
+    width: 300px;
+  }
+  
+  .value:nth-child(5) {
+    grid-row: 5; 
+    grid-column: 1;
+    width: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-container {
+    margin: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

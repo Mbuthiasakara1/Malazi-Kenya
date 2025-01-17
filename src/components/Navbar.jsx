@@ -1,14 +1,21 @@
-import './Navbar.css'
-import { NavLink} from 'react-router-dom'
-import { MdOutlineFileDownload } from "react-icons/md";
+import './Navbar.css';
+import { NavLink } from 'react-router-dom';
+import { MdOutlineFileDownload } from 'react-icons/md';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
 
   const handleDownload = () => {
-    const filePath = "/downloads/Malazi_Kenya_Profile.pdf"; // Path to the file in the public folder
-    const link = document.createElement("a");
+    const filePath = '/downloads/Malazi_Kenya_Profile.pdf'; // Path to the file in the public folder
+    const link = document.createElement('a');
     link.href = filePath;
-    link.download = "Malazi Kenya Profile.pdf"; // Suggested filename
+    link.download = 'Malazi Kenya Profile.pdf'; // Suggested filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -16,33 +23,44 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='nav-container'>
-      <div className='logo-container'>
-        <img
-        src='/images/logo.jpeg'
-        alt='malazi-logo'
-        className='logo'
-      />
-      <h2>Malazi Kenya</h2>
-      </div>
-      
-      <nav className='navbar'>
-        <ul>
-          <li> <NavLink to = "/">Home</NavLink> </li>
-          <li> <NavLink to = "/about">About Us</NavLink> </li>
-          <li> <NavLink to = "/services">Our Services</NavLink> </li>
-          <li> <NavLink to = "/portfolio">Portfolio</NavLink> </li>
-          <li> <NavLink to = "/contact">Contact Us</NavLink> </li>
-        </ul>
-      </nav>
-      <button className='nav-btn' onClick={handleDownload}>
-      Company Profile <MdOutlineFileDownload /> </button>
-    </div>
-    <hr />
-    </>
-    
+      <div className="nav-container">
+        <div className="logo-container">
+          <img src="/images/logo.jpeg" alt="malazi-logo" className="logo" />
+          <h2>Malazi Kenya</h2>
+        </div>
+        
+        <div className="menu-icon" onClick={toggleMenu}>
+          {isMenuOpen ? <FaTimes size={24}/> : <FaBars size={24}/>}
+        </div>
+        <div className={`menu-container ${isMenuOpen ? 'active' : ''}`}>
+        <nav className='navbar'>
+          <ul onClick={toggleMenu}>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About Us</NavLink>
+            </li>
+            <li>
+              <NavLink to="/services">Our Services</NavLink>
+            </li>
+            <li>
+              <NavLink to="/portfolio">Portfolio</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact Us</NavLink>
+            </li>
+          </ul>
+        </nav>
 
-  )
-}
+        <button className="nav-btn" onClick={handleDownload}>
+          Company Profile <MdOutlineFileDownload />
+        </button>
+        </div>
+      </div>
+      <hr />
+    </>
+  );
+};
 
 export default Navbar;

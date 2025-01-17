@@ -81,4 +81,74 @@
     padding-left: 1em;
   }
 
+  @media (max-width: 768px) {
+    .portfolio-container {
+      padding: 0 1em; /* Add padding for smaller screens */
+      margin-bottom: 3em;
+    }
+  
+    .portfolio-container h2 {
+      font-size: 28px; /* Reduce font size */
+      margin-bottom: 0.8em;
+    }
+  
+    .portfolio-container .MuiImageList-root {
+      grid-template-columns: repeat(2, 1fr) !important; /* Display 2 columns */
+      gap: 12px; /* Reduce gap between items */
+    }
+  
+    .portfolio-container .MuiImageListItem-root {
+      border-radius: 6px; /* Reduce border radius */
+    }
+  
+    .portfolio-container .MuiImageListItem-root img {
+      height: 180px; /* Adjust image height */
+    }
+  
+    .portfolio-container .MuiImageListItem-root .MuiImageListItemBar {
+      height: 1.8em; /* Reduce bar height */
+      font-size: 14px; /* Reduce text size */
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .portfolio-container {
+      padding: 0 0.5em; /* Add smaller padding */
+      margin-bottom: 2em;
+    }
+  
+    .portfolio-container h2 {
+      font-size: 24px; /* Further reduce font size */
+      margin-bottom: 0.5em;
+    }
+  
+    .portfolio-container .MuiImageList-root {
+      grid-template-columns: 1fr !important; /* Display 1 column */
+      gap: 8px; /* Reduce gap further */
+    }
+  
+    .portfolio-container .MuiImageListItem-root img {
+      height: 150px; /* Adjust image height */
+    }
+  
+    .portfolio-container .MuiImageListItem-root .MuiImageListItemBar {
+      height: 1.5em; /* Reduce bar height further */
+      font-size: 12px; /* Reduce text size */
+    }
+  
+    .portfolio-container .MuiImageListItem-root:hover {
+      transform: none; /* Disable hover scaling on small screens */
+    }
+  
+    .portfolio-container .MuiImageListItem-root:hover img {
+      transform: none; /* Disable image scaling on hover */
+    }
+  
+    .portfolio-container .MuiImageListItem-root:hover .MuiImageListItemBar-title {
+      color: black; /* Keep original text color */
+      font-weight: 400; /* Keep original font weight */
+      background-color: transparent;
+      padding-left: 0;
+    }
+  }
   

@@ -47,3 +47,59 @@
   border:1px solid #ccc;
   border-radius:4px;
 }
+@media (max-width: 768px) {
+  .form-info h2 {
+    font-size: 28px; /* Adjust heading size */
+    text-align: center; /* Center align for smaller screens */
+  }
+
+  .form {
+    padding: 0 10px;
+    width: 80vw;
+    align-items: center;
+  }
+
+  .form label {
+    font-size: 14px; /* Reduce label font size */
+    text-align: center; /* Center align labels */
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    width: 80%; /* Adjust input and textarea width to fit screen */
+    font-size: 13px; /* Slightly smaller font size */
+  }
+
+  .form button {
+    width: 140px; /* Adjust button width */
+    font-size: 14px; /* Reduce button font size */
+  }
+}
+
+@media (max-width: 360px) {
+  .form-info h2 {
+    font-size: 24px; /* Further reduce heading size */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+  .form label {
+    font-size: 12px; /* Further reduce label font size */
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    width: 100%; /* Adjust input and textarea width for very small screens */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .form textarea {
+    height: 80px; /* Reduce textarea height */
+  }
+
+  .form button {
+    width: 120px; /* Smaller button width */
+    font-size: 12px; /* Adjust button font size */
+    height: 40px; /* Reduce button height */
+  }
+}
