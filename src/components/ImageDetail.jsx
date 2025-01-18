@@ -11,19 +11,36 @@ const ImageDetail = () => {
 
   const projectImages = {
     1: [
-      { img: "/images/tractor.jpg" },
-      { img: "/images/tractor.jpg" },
-      { img: "/images/tractor.jpg" },
+      { img: "/projects/pict3.jpg" },
+      { img: "/projects/toiletsb.jpg" },
+      { img: "/projects/project3.jpg" },
     ],
     2: [
-      { img: "/images/waterfall.jpg" },
-      { img: "/images/development.jpg" },
-      { img: "/images/waterfall.jpg" },
+      { img: "/projects/Marketpic1.jpg" },
+      { img: "/projects/marketpic2.jpg" },
     ],
     3: [
-      { img: "/images/sunset.jpg" },
-      { img: "/images/sunset.jpg" },
-      { img: "/images/sunset.jpg" },
+      { img: "/projects/culvert1.jpg" },
+      { img: "/projects/culvert2.jpg" },
+      { img: "/projects/culvert3.jpg" },
+    ],
+
+    4: [
+      { img: "/projects/githunguri3.jpg" },
+      { img: "/projects/githunguri2.jpg" },
+    ],
+
+    5: [
+      { img: "/images/mirror.jpg" },
+      { img: "/images/waterfall.jpg" },
+      { img: "/images/blackblock.jpg" },
+    ],
+
+    7: [{ img: "/projects/fencepic1.jpg" }, { img: "/projects/fence3.jpg" }],
+
+    8: [
+      { img: "/projects/Komothai2.jpg" },
+      { img: "/images/IMG-20250104-WA0042.jpg" },
     ],
   };
 

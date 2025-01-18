@@ -1,37 +1,60 @@
-
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Footer from "./Footer";
-import './ProjectGallery.css'
+import "./ProjectGallery.css";
 import { useNavigate, useParams } from "react-router-dom";
 
 function ProjectGallery() {
   const { projectId } = useParams();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const projectImages = {
     1: [
-      { img: "/images/tractor.jpg" },
-      { img: "/images/tractor.jpg" },
-      { img: "/images/tractor.jpg" },
+      { img: "/projects/pict3.jpg" },
+      { img: "/projects/toiletsb.jpg" },
+      { img: "/projects/project3.jpg" },
     ],
     2: [
-      { img: "/images/waterfall.jpg" },
-      { img: "/images/waterfall.jpg" },
-      { img: "/images/waterfall.jpg" },
+      { img: "/projects/Marketpic1.jpg" },
+      { img: "/projects/marketpic2.jpg" },
     ],
     3: [
-      { img: "/images/sunset.jpg" },
-      { img: "/images/sunset.jpg" },
-      { img: "/images/sunset.jpg" },
+      { img: "/projects/culvert1.jpg" },
+      { img: "/projects/culvert2.jpg" },
+      { img: "/projects/culvert3.jpg" },
+    ],
+
+    4: [
+      { img: "/projects/githunguri3.jpg" },
+      { img: "/projects/githunguri2.jpg" },
+    ],
+
+    5: [
+      { img: "/images/mirror.jpg" },
+      { img: "/images/waterfall.jpg" },
+      { img: "/images/blackblock.jpg" },
+    ],
+
+    6: [{ img: "/projects/Roadpic2.jpg" }, { img: "/projects/Roadpic1.jpg" }],
+
+    7: [{ img: "/projects/fencepic1.jpg" }, { img: "/projects/fence3.jpg" }],
+
+    8: [
+      { img: "/projects/Komothai2.jpg" },
+      { img: "/images/IMG-20250104-WA0042.jpg" },
     ],
   };
 
   const projects = [
     "",
-    "Apartment Blocks in Nairobi",
+    "Kathwana Market Ablution Block",
     "Ndagani Modern Market",
-    "Kathwana Ablution Block",
+    "Culvert Projects in Kajiado",
+    "Abulution Block in GIthunguri Primary School",
+    "Apartment Blocks in Nairobi",
+    "Rehabilitated Roads in Chuka",
+    "Fence Construction at Chuka Level 5",
+    "Abulution Block at Komothai Girls School",
     "Kathwana Ablution Block",
   ];
 
@@ -46,7 +69,7 @@ function ProjectGallery() {
   return (
     <>
       <Navbar />
-      <div className='header-container'>
+      <div className="header-container">
         {image && (
           <>
             <img
@@ -55,9 +78,7 @@ function ProjectGallery() {
               className="project-header"
             />
             <div className="project-text">
-              <h1>
-                {projectTitle}
-              </h1>
+              <h1>{projectTitle}</h1>
             </div>
           </>
         )}
@@ -67,7 +88,7 @@ function ProjectGallery() {
         projects={projects}
         projectImages={projectImages}
         projectId={projectId}
-        onImageClick = {handleImageClick}
+        onImageClick={handleImageClick}
       />
       <Footer />
     </>
