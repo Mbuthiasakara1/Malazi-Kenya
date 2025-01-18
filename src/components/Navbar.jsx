@@ -1,10 +1,11 @@
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { MdOutlineFileDownload } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,8 +25,11 @@ const Navbar = () => {
   return (
     <>
       <div className="nav-container">
-        <div className="logo-container">
-          <img src="/images/logo.jpeg" alt="malazi-logo" className="logo" />
+        <div className="logo-container" onClick={()=>navigate('/')}>
+          <img 
+          src="/images/logo.jpeg" 
+          alt="malazi-logo" 
+          className="logo" />
           <h2>Malazi Kenya</h2>
         </div>
         
