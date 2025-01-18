@@ -33,7 +33,7 @@ import { useNavigate } from "react-router-dom";
             <button onClick={() => navigate("/projects")}>Learn More</button>
           </div>
         </div>
-        <div className="card-1">
+        <div className="card-1 card-2">
           <div className="card1-info">
             <h2>Road,Bridges And Marine Engineering Works</h2>
             <p>
@@ -63,7 +63,7 @@ import { useNavigate } from "react-router-dom";
             <button onClick={() => navigate("/projects")}>Learn More</button>
           </div>
         </div>
-        <div className="card-1">
+        <div className="card-1 card-2">
           <div className="card1-info">
             <h2>Dams and Irrigation</h2>
             <p>
@@ -90,7 +90,7 @@ import { useNavigate } from "react-router-dom";
             <button onClick={() => navigate("/projects")}>Learn More</button>
           </div>
         </div>
-        <div className="card-1">
+        <div className="card-1 card-2">
           <div className="card1-info">
             <h2>Renewable Energy</h2>
             <p>

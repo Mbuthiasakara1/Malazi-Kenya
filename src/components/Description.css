@@ -150,3 +150,89 @@
     background-color:#BC1F28;
     color:white;
 }
+
+@media (max-width: 768px) {
+    .container {
+      padding: 10px; /* Reduce padding for smaller screens */
+      margin: 2em auto;
+    }
+  
+    .container h1 {
+      font-size: 24px; /* Reduce font size */
+    }
+  
+    .desc-info {
+      flex-direction: column; /* Stack the content vertically */
+      gap: 20px; /* Adjust spacing between sections */
+    }
+  
+    .content-image {
+      max-width: 100%; /* Allow full-width images */
+      text-align: center;
+    }
+  
+    .content-image img {
+      width: 100%; /* Make the image responsive */
+    }
+  
+    .features {
+      justify-content: center; /* Center align features */
+      gap: 15px; /* Reduce spacing between features */
+    }
+  
+    .feature {
+      flex: 0 1 calc(50% - 10px); /* Display 2 features per row */
+    }
+  
+    .description {
+      font-size: 14px; /* Reduce font size */
+      margin-bottom: 2em;
+    }
+  
+    .animated-container {
+      margin-top: 2em;
+    }
+  
+    .animated-num {
+      flex-direction: column; /* Stack animated stats vertically */
+      align-items: center;
+      gap: 1.5em; /* Add spacing between stats */
+      width: 100%;
+    }
+  
+    .animated-styles {
+      margin-bottom: 1.5em;
+    }
+  
+    .project-card-container h2 {
+      font-size: 24px; /* Adjust font size */
+      margin-bottom: 1.5em;
+    }
+  
+    .projects-info-container {
+      gap: 2em; /* Reduce spacing between project cards */
+    }
+  
+    .project-info-card img {
+      width: 100%; /* Make project images responsive */
+      height: auto;
+    }
+  
+    .below-container {
+      width: 100%; /* Match card width */
+      text-align: center; /* Center-align text */
+    }
+  
+    .below-container p {
+      font-size: 16px; /* Adjust font size */
+    }
+  
+    .other-projects-btn {
+      font-size: 18px; /* Adjust button font size */
+      width: 100%; /* Make button full-width */
+      max-width: 200px; /* Limit max width */
+      height: auto;
+      padding: 10px; /* Adjust padding */
+    }
+  }
+  

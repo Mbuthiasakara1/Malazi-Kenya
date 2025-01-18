@@ -70,19 +70,6 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .content {
-      flex-direction: column;
-      gap: 2em;
-    }
-  
-    .content-info,
-    .clipped-image {
-      max-width: 100%; /* Full width on smaller screens */
-    }
-  }
-  
 .section-title {
     font-size: 30px; 
     font-weight: bold; 
@@ -143,4 +130,84 @@
 .learn-more-btn:hover{
     background-color: #f44336;
     color:black;
+}
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 1em;
+    padding: 0;
+  }
+
+  .content {
+    flex-direction: column; /* Stack the content vertically */
+    gap: 1.5em;
+    width: 100%; /* Ensure full width */
+    align-items: center;
+  }
+
+  .content-info {
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: center; /* Center align text for better readability */
+  }
+
+  .content-info h1 {
+    font-size: 1.8rem; /* Slightly reduce font size */
+  }
+
+  .content-info p {
+    font-size: 1rem;
+    line-height: 1.4; /* Adjust line height for better readability */
+  }
+
+  .content-btn {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .content-btn button {
+    width: 100%; /* Make the button span full width */
+    max-width: 300px; 
+  }
+
+  .clipped-image {
+    width: 80%; /* Make the image responsive */
+    max-width: 300px; /* Limit the image width */
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 24px; /* Reduce font size */
+    margin:20x 0;
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack the cards vertically */
+    gap: 1.5em; /* Add spacing between cards */
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Adjust card width */
+  }
+
+  .card img {
+    height: auto;
+  }
+
+  .card-content h2 {
+    font-size: 18px; /* Adjust heading size */
+  }
+
+  .card-content p {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .learn-more-btn {
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust padding */
+    width: 100%; /* Make the button responsive */
+    max-width: 250px; /* Limit button width */
+    margin: 0 auto; /* Center align */
+  }
 }
