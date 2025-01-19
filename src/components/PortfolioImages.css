@@ -1,8 +1,8 @@
 .portfolio-container{
     margin-bottom:4em;
     margin-top:1em;
-    overflow: hidden; /* Prevents content overflow */
     padding: 16px;
+    overflow:hidden;
     
 }
 .portfolio-container h2{
@@ -30,8 +30,8 @@
   }
   
   .portfolio-container .MuiImageListItem-root:hover img {
-    filter: brightness(0.7); /* Darken the image slightly */
-    transform: scale(1.1); /* Scale the image slightly */
+    filter: brightness(0.7);
+    transform: scale(1.1);
   }
   
   .portfolio-container .MuiImageListItem-root .MuiImageListItemBar {
@@ -84,6 +84,7 @@
     background-color: #BC1F28;
     padding-left: 1em;
   }
+
 
   @media (max-width: 768px) {
     .portfolio-container {

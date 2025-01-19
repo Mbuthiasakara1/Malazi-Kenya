@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+
 import {
   Container,
   ImageList,
@@ -25,7 +25,7 @@ const PortfolioImages = () => {
     },
     {
       id: 3,
-      img: "projects/culvertM.jpg",
+      img: "projects/CulvertM.jpg",
       title: "Culvert Projects in Kajiado",
     },
     {

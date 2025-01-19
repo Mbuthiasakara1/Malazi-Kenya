@@ -3,27 +3,27 @@
 }
 @media (max-width: 768px) {
     .gallery-container {
-      padding: 1em; /* Reduce padding for smaller screens */
+      padding: 1em; 
       margin-bottom: 3em;
     }
   
     .gallery-container button {
-      font-size: 14px; /* Reduce button font size */
-      padding: 8px 16px; /* Adjust button padding */
+      font-size: 14px; 
+      padding: 8px 16px; 
     }
   
     .gallery-container h4 {
-      font-size: 28px; /* Reduce heading font size */
+      font-size: 28px; 
       margin-bottom: 1.5em;
     }
   
     .gallery-container .MuiImageList-root {
-      grid-template-columns: repeat(2, 1fr) !important; /* Display 2 columns */
-      gap: 12px; /* Reduce gap between items */
+      grid-template-columns: repeat(2, 1fr) !important; 
+      gap: 12px; 
     }
   
     .gallery-container .MuiImageListItem-root img {
-      height: 180px; /* Adjust image height */
+      height: 180px; 
     }
   }
   

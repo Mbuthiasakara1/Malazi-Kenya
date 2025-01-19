@@ -81,30 +81,31 @@ export default function Description() {
         <h2>Our Projects</h2>
         <div className="projects-info-container">
           <div className="project-info-card">
-            <img src="images/pic1.jpg" />
+            <img src="projects/toilets.jpg" />
+            <div className="below-container">
+              <p>Kathwana Market Ablution Block</p>
+            </div>
+          </div>
+
+          <div className="project-info-card">
+            <img src="projects/Market1.jpg" />
             <div className="below-container">
               <p>Ndagani Modern Market</p>
             </div>
           </div>
 
           <div className="project-info-card">
-            <img src="images/pic1.jpg" />
+            <img src="projects/CulvertM.jpg" />
             <div className="below-container">
-              <p>Ndagani Modern Market</p>
-            </div>
-          </div>
-
-          <div className="project-info-card">
-            <img src="images/pic1.jpg" />
-            <div className="below-container">
-              <p>Ndagani Modern Market</p>
+              <p>Culvert Projects in Kajiado</p>
             </div>
           </div>
         </div>
-        <button className="other-projects-btn" onClick={() => navigate("/portfolio")}>
-
-        
-          Other Projects  <HiArrowLongRight/> 
+        <button
+          className="other-projects-btn"
+          onClick={() => navigate("/portfolio")}
+        >
+          Other Projects <HiArrowLongRight />
         </button>
       </div>
     </div>
