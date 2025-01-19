@@ -15,7 +15,8 @@ function Home() {
               both Kenya and the United States. As a proud member of the Acacia
               Group, we bring world-class construction expertise to East Africa
               while maintaining our headquarters in Wichita, Kansas.
-              <br /><br />
+              <br />
+              <br />
               <p>
                 As part of the Acacia Group, a real estate ﬁrm headquartered in
                 Kansas, we strive to enhance value for money by providing
@@ -25,7 +26,9 @@ function Home() {
                 clients and are committed to superior quality and results,
                 reﬂected in our motto: &nbsp;
                 <span>
-                  <strong>{'"Committed to Superior Quality and Results"'}</strong> 
+                  <strong>
+                    {'"Committed to Superior Quality and Results"'}
+                  </strong>
                 </span>
               </p>
             </p>
@@ -34,7 +37,7 @@ function Home() {
             </div>
           </div>
           <img
-            src="images/tractor.jpg"
+            src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327401/tractor_fwmktk.jpg"
             alt="tractor-image"
             className="clipped-image"
           />
@@ -44,7 +47,7 @@ function Home() {
       <h1 className="section-title">What We Do</h1>
       <div className="card-container">
         <div className="card">
-          <img src="images/real.jpg" />
+          <img src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327624/real_gweorz.jpg" />
           <div className="card-content">
             <h2>Real Estate Construction</h2>
             <p>
@@ -62,12 +65,13 @@ function Home() {
           </div>
         </div>
         <div className="card">
-          <img src="images/development.jpg" />
+          <img src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327627/development_toywsc.jpg" />
           <div className="card-content">
             <h2>Roads, Bridges and Marine Engineering Works</h2>
             <p>
               Construction of roads, bridges, and marine engineering works using
-              cutting-edge machinery and technology. Airports and Seaports development. 
+              cutting-edge machinery and technology. Airports and Seaports
+              development.
             </p>
             <button
               className="learn-more-btn"
@@ -78,7 +82,7 @@ function Home() {
           </div>
         </div>
         <div className="card">
-          <img src="images/dam.jpg" />
+          <img src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327633/dam_lyazeq.jpg" />
           <div className="card-content">
             <h2>Dams and Irrigation</h2>
             <p>

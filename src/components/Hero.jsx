@@ -8,7 +8,11 @@ import './Hero.css'
 
 
  function Hero() {
-    const swiperImages = ["images/mirror.jpg",'images/pic1.jpg','images/blackblock.jpg'];
+    const swiperImages = [
+      "https://res.cloudinary.com/dpngcztrh/image/upload/v1737323519/mirror_z8fa1p.jpg",
+      "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321362/pic1_n2tdkc.jpg",
+      "https://res.cloudinary.com/dpngcztrh/image/upload/v1737323519/blackblock_uihib6.jpg",
+    ];
     const projects = ["Apartment Blocks in Nairobi","Ndagani Modern Market","Kathwana ablution block"];
     const navigate=useNavigate()
 

@@ -1,11 +1,11 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar"
 import './Services.css'
-import { useNavigate } from "react-router-dom";
+
 
 
  function Services() {
-    const navigate =useNavigate()
+    
   return (
     <>
       <Navbar />
@@ -17,7 +17,10 @@ import { useNavigate } from "react-router-dom";
           </p>
         </div>
         <div className="card-1">
-          <img src="services/realestate.jpg" alt="real estate construction" />
+          <img
+            src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327775/realestate_wem4kk.jpg"
+            alt="real estate construction"
+          />
           <div className="card1-info">
             <h2>Real Estate Construction</h2>
             <p>
@@ -26,9 +29,10 @@ import { useNavigate } from "react-router-dom";
               With over twenty years of experience in residential and commercial
               projects, our experts excel in blueprint implementation, including
               ground leveling, landscaping, structural reinforcement, interiors,
-              and renovations.<br/> We specialize in both affordable housing schemes
-              and luxurious developments and have expertise in alternative
-              building technologies like prefab and precast.
+              and renovations.
+              <br /> We specialize in both affordable housing schemes and
+              luxurious developments and have expertise in alternative building
+              technologies like prefab and precast.
             </p>
             {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
@@ -44,11 +48,14 @@ import { useNavigate } from "react-router-dom";
             {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
 
-          <img src="services/Roads.jpg" alt="roads-bridges-construction" />
+          <img
+            src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327779/Roads_nkb5zh.jpg"
+            alt="roads-bridges-construction"
+          />
         </div>
         <div className="card-1">
           <img
-            src="services/sewarage.jpg"
+            src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327774/sewarage_nszx2l.jpg"
             alt="Water-and-Sewerage-construction"
           />
           <div className="card1-info">
@@ -74,10 +81,16 @@ import { useNavigate } from "react-router-dom";
             </p>
             {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
-          <img src="services/dams.jpg" alt="Dams-and-Irrigation" />
+          <img
+            src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327778/dams_s5ozr0.jpg"
+            alt="Dams-and-Irrigation"
+          />
         </div>
         <div className="card-1">
-          <img src="services/oil.jpg" alt="oil-works" />
+          <img
+            src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327776/oil_axxfbn.jpg"
+            alt="oil-works"
+          />
           <div className="card1-info">
             <h2>Oil and Gas Works</h2>
 
@@ -102,10 +115,13 @@ import { useNavigate } from "react-router-dom";
             </p>
             {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
-          <img src="services/energy.jpg" alt="renewable-energy" />
+          <img
+            src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737327777/energy_wa1hu0.jpg"
+            alt="renewable-energy"
+          />
         </div>
       </div>
-    <Footer />
+      <Footer />
     </>
   );
 }

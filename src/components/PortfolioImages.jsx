@@ -15,42 +15,42 @@ const PortfolioImages = () => {
   const portfolioItems = [
     {
       id: 1,
-      img: "projects/toilets.jpg",
+      img: "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321070/toilets_jvi3re.jpg",
       title: "Kathwana Market Ablution Block",
     },
     {
       id: 2,
-      img: "projects/Market1.jpg",
+      img: "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321155/Market1_js2ybv.jpg",
       title: "Ndagani Modern Market",
     },
     {
       id: 3,
-      img: "projects/CulvertM.jpg",
+      img: "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321280/CulvertM_kjtuzh.png",
       title: "Culvert Projects in Kajiado",
     },
     {
       id: 4,
-      img: "projects/githunguriM.jpg",
+      img: "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321937/githunguriM_mfuogx.jpg",
       title: "Abulution Block in GIthunguri Primary School",
     },
     {
       id: 5,
-      img: "images/pic1.jpg",
+      img: "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321362/pic1_n2tdkc.jpg",
       title: "Apartment Blocks in Nairobi",
     },
     {
       id: 6,
-      img: "projects/RoadM.jpg",
+      img: "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321424/RoadM_fz7jtk.jpg",
       title: "Rehabilitated Roads in Chuka",
     },
     {
       id: 7,
-      img: "projects/fence.jpg",
+      img: "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321464/fence_iipu28.jpg",
       title: "Fence Construction at Chuka Level 5",
     },
     {
       id: 8,
-      img: "projects/KomothaiM.jpg",
+      img: "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321535/KomothaiM_njr9xr.jpg",
       title: "Abulution Block at Komothai Girls School",
     },
   ];

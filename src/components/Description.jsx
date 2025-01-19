@@ -12,7 +12,10 @@ export default function Description() {
       <h1>Why Choose Us</h1>
       <div className="desc-info">
         <div className="content-image">
-          <img src="images/better.jpg" alt="phone-display" />
+          <img
+            src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737328003/better_sxywiw.jpg"
+            alt="phone-display"
+          />
         </div>
         <div className="features">
           <p className="description">
@@ -81,21 +84,21 @@ export default function Description() {
         <h2>Our Projects</h2>
         <div className="projects-info-container">
           <div className="project-info-card">
-            <img src="projects/toilets.jpg" />
+            <img src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737321070/toilets_jvi3re.jpg" />
             <div className="below-container">
               <p>Kathwana Market Ablution Block</p>
             </div>
           </div>
 
           <div className="project-info-card">
-            <img src="projects/Market1.jpg" />
+            <img src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737321155/Market1_js2ybv.jpg" />
             <div className="below-container">
               <p>Ndagani Modern Market</p>
             </div>
           </div>
 
           <div className="project-info-card">
-            <img src="projects/CulvertM.jpg" />
+            <img src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737321280/CulvertM_kjtuzh.png" />
             <div className="below-container">
               <p>Culvert Projects in Kajiado</p>
             </div>

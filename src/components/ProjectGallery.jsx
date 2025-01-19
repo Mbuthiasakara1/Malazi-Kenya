@@ -3,47 +3,30 @@ import Projects from "./Projects";
 import Footer from "./Footer";
 import "./ProjectGallery.css";
 import { useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function ProjectGallery() {
   const { projectId } = useParams();
   const navigate = useNavigate();
+  const [projectImages,setProjectImages] =useState({})
+  const[isLoading,setIsLoading] =useState(true)
 
-  const projectImages = {
-    1: [
-      { img: "/projects/pict3.jpg" },
-      { img: "/projects/toiletsb.jpg" },
-      { img: "/projects/project3.jpg" },
-    ],
-    2: [
-      { img: "/projects/Marketpic1.jpg" },
-      { img: "/projects/marketpic2.jpg" },
-    ],
-    3: [
-      { img: "/projects/culvert1.jpg" },
-      { img: "/projects/culvert2.jpg" },
-      { img: "/projects/culvert3.jpg" },
-    ],
 
-    4: [
-      { img: "/projects/githunguri3.jpg" },
-      { img: "/projects/githunguri2.jpg" },
-    ],
+   useEffect(() => {
+    fetch("/images.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setProjectImages(data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching project images:", error);
+        setIsLoading(false);
+      });
+  }, []);
 
-    5: [
-      { img: "/images/mirror.jpg" },
-      { img: "/images/waterfall.jpg" },
-      { img: "/images/blackblock.jpg" },
-    ],
-
-    6: [{ img: "/projects/Roadpic2.jpg" }, { img: "/projects/Roadpic1.jpg" }],
-
-    7: [{ img: "/projects/fencepic1.jpg" }, { img: "/projects/fence3.jpg" }],
-
-    8: [
-      { img: "/projects/Komothai2.jpg" },
-      { img: "/images/IMG-20250104-WA0042.jpg" },
-    ],
-  };
+    if (isLoading) return <p>Loading</p>
+   
 
   const projects = [
     "",
@@ -59,12 +42,13 @@ function ProjectGallery() {
   ];
 
   const handleImageClick = (index) => {
-    navigate(`/portfolio/${projectId}/image/${index}`);
+    navigate(`/portfolio/${projectId}/image/${index}`),{
+    };
   };
 
-  // Get the first image associated with the projectId
-  const image = projectImages[projectId]?.[0]; // Safely access the first image
-  const projectTitle = projects[projectId]; // Get the project title
+  
+  const image = projectImages[projectId]?.[0]; 
+  const projectTitle = projects[projectId];
 
   return (
     <>
