@@ -36,6 +36,8 @@ const ImageDetail = () => {
       { img: "/images/blackblock.jpg" },
     ],
 
+    6: [{ img: "/projects/Roadpic2.jpg" }, { img: "/projects/Roadpic1.jpg" }],
+
     7: [{ img: "/projects/fencepic1.jpg" }, { img: "/projects/fence3.jpg" }],
 
     8: [
@@ -43,6 +45,7 @@ const ImageDetail = () => {
       { img: "/images/IMG-20250104-WA0042.jpg" },
     ],
   };
+
 
   const images = projectImages[projectId] || [];
 
