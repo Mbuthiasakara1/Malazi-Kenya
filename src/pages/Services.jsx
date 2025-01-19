@@ -26,7 +26,7 @@ import { useNavigate } from "react-router-dom";
               With over twenty years of experience in residential and commercial
               projects, our experts excel in blueprint implementation, including
               ground leveling, landscaping, structural reinforcement, interiors,
-              and renovations. We specialize in both affordable housing schemes
+              and renovations.<br/> We specialize in both affordable housing schemes
               and luxurious developments and have expertise in alternative
               building technologies like prefab and precast.
             </p>

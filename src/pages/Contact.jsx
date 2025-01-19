@@ -31,6 +31,8 @@ function Contact() {
 
             <h3>Location</h3>
             <p>Bloomfield Moringa Road, Kilimani, Nairobi.</p>
+            <br style={{marginBottom:"5px"}}/>
+            <p>Wichita,Kansas.</p>
           </div>
         </div>
 

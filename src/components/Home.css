@@ -148,16 +148,16 @@
   .content-info {
     max-width: 100%;
     padding: 0 10px;
-    text-align: center; /* Center align text for better readability */
+    text-align: center; 
   }
 
   .content-info h1 {
-    font-size: 1.8rem; /* Slightly reduce font size */
+    font-size: 1.8rem; /
   }
 
   .content-info p {
     font-size: 1rem;
-    line-height: 1.4; /* Adjust line height for better readability */
+    line-height: 1.4; 
   }
 
   .content-btn {
@@ -166,29 +166,37 @@
   }
 
   .content-btn button {
-    width: 100%; /* Make the button span full width */
-    max-width: 300px; 
+    background-color:#BC1F28;
+    color:#FFFFFF;
+    font-size:16px;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    text-align:center;
+    display:inline-block;
+    transition-duration:0.5s;
+    cursor:pointer;
   }
 
   .clipped-image {
-    width: 80%; /* Make the image responsive */
-    max-width: 300px; /* Limit the image width */
+    width: 80%; 
+    max-width: 300px; 
     height: auto;
   }
 
   .section-title {
-    font-size: 24px; /* Reduce font size */
+    font-size: 24px;
     margin:20x 0;
   }
 
   .card-container {
-    flex-direction: column; /* Stack the cards vertically */
-    gap: 1.5em; /* Add spacing between cards */
+    flex-direction: column; 
+    gap: 1.5em; 
     align-items: center;
   }
 
   .card {
-    width: 90%; /* Adjust card width */
+    width: 90%; 
   }
 
   .card img {
@@ -196,18 +204,32 @@
   }
 
   .card-content h2 {
-    font-size: 18px; /* Adjust heading size */
+    font-size: 18px; 
   }
 
   .card-content p {
-    font-size: 14px; /* Reduce font size for smaller screens */
+    font-size: 14px;
   }
 
+  .card:hover{
+    transform:translateY(0px);
+}
+
   .learn-more-btn {
-    font-size: 0.9rem; /* Adjust button font size */
-    padding: 8px 16px; /* Adjust padding */
-    width: 100%; /* Make the button responsive */
-    max-width: 250px; /* Limit button width */
-    margin: 0 auto; /* Center align */
+    /* font-size: 0.9rem; 
+    padding: 8px 16px; 
+    width: 100%; 
+    max-width: 250px;
+    margin: 0 auto; */
+    background-color:#BC1F28;
+    color:#FFFFFF;
+    font-size:16px;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    text-align:center;
+    display:inline-block;
+    transition-duration:0.5s;
+    cursor:pointer;
   }
 }
