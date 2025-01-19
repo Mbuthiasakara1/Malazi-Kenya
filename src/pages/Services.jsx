@@ -30,7 +30,7 @@ import { useNavigate } from "react-router-dom";
               and luxurious developments and have expertise in alternative
               building technologies like prefab and precast.
             </p>
-            <button onClick={() => navigate("/projects")}>Learn More</button>
+            {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
         </div>
         <div className="card-1 card-2">
@@ -41,7 +41,7 @@ import { useNavigate } from "react-router-dom";
               can handle Road construction, Bridges, and Highways. Airports and
               Seaports development.
             </p>
-            <button onClick={() => navigate("/projects")}>Learn More</button>
+            {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
 
           <img src="services/Roads.jpg" alt="roads-bridges-construction" />
@@ -60,7 +60,7 @@ import { useNavigate } from "react-router-dom";
               water treatment plants, plumbing works, and sewerage line
               installations.
             </p>
-            <button onClick={() => navigate("/projects")}>Learn More</button>
+            {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
         </div>
         <div className="card-1 card-2">
@@ -72,7 +72,7 @@ import { useNavigate } from "react-router-dom";
               the fastest technologies from 3D AutoCAD in design to
               implementation
             </p>
-            <button onClick={() => navigate("/projects")}>Learn More</button>
+            {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
           <img src="services/dams.jpg" alt="Dams-and-Irrigation" />
         </div>
@@ -87,7 +87,7 @@ import { useNavigate } from "react-router-dom";
               and storage tanks installation and build pipelines. We put
               measures during construction to maximize quality and safety.
             </p>
-            <button onClick={() => navigate("/projects")}>Learn More</button>
+            {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
         </div>
         <div className="card-1 card-2">
@@ -100,7 +100,7 @@ import { useNavigate } from "react-router-dom";
               divisional ENERGY LTD. We have identified a site to structure and
               develop a 60 MW of solar power in Isinya - Kajiado county..
             </p>
-            <button onClick={() => navigate("/projects")}>Learn More</button>
+            {/* <button onClick={() => navigate("/projects")}>Learn More</button> */}
           </div>
           <img src="services/energy.jpg" alt="renewable-energy" />
         </div>
