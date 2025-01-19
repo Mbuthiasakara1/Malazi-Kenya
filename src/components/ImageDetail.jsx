@@ -231,12 +231,12 @@ const ImageDetail = () => {
         <IconButton
           onClick={handleNext}
           sx={{
-            color: "white",
+            color: "lightblue", // Default color
             "&:hover": {
-              bgcolor: "rgba(255, 255, 255, 0.1)",
+              bgcolor: "rgba(173, 216, 230, 0.1)", // Light blue hover background
             },
             "&.Mui-disabled": {
-              color: "rgba(255, 255, 255, 0.3)",
+              color: "rgba(173, 216, 230, 0.3)", // Muted light blue for disabled state
             },
           }}
           disabled={currentIndex === images.length - 1}
