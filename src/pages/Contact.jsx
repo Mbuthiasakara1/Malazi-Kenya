@@ -3,10 +3,15 @@ import ContactForm from "../components/ContactForm";
 import "../components/ContactForm.css";
 import "./Contact.css";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 
 function Contact() {
+   useEffect(() => {
+     document.title = "Contact | Malazi Kenya";
+   }, []);
   return (
+    
     <div>
       <Navbar />
       <div className="contact-container">

@@ -1,10 +1,14 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar"
 import './Services.css'
+import { useEffect } from "react";
 
 
 
  function Services() {
+   useEffect(() => {
+     document.title = "Services | Malazi Kenya";
+   }, []);
     
   return (
     <>

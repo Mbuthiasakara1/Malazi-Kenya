@@ -3,8 +3,13 @@ import Footer from '../components/Footer'
 import './About.css'
 import { VscTelescope } from "react-icons/vsc";
 import { GiBullseye } from "react-icons/gi";
+import { useEffect } from 'react';
+
 
 function About() {
+ useEffect(()=>{
+  document.title="About | Malazi Kenya"
+ },[])
     return (
       <>
         <Navbar />

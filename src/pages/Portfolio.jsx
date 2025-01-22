@@ -3,8 +3,12 @@ import Navbar from '../components/Navbar';
 import "./Portfolio.css"
 import PortfolioImages from '../components/PortfolioImages';
 import Footer from '../components/Footer';
+import { useEffect } from 'react';
 
 function Portfolio() {
+   useEffect(() => {
+     document.title = "Portfolio | Malazi Kenya";
+   }, []);
   return (
     <>
       <Navbar />
