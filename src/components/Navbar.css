@@ -34,13 +34,34 @@
     list-style: none;
     gap: 3em;
 }
+.navbar ul li{
+    position:relative;
+}
+.navbar ul li ::after{
+    content:'';
+    height:2px;
+    width:0;
+    background: #BC1F28;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition:0.5s;
+
+
+}
+
+.navbar ul li a:hover::after{
+    width:100%;
+}
 .navbar ul li a{
     text-decoration: none;
     color: #3B4A3F;
     font-size: 16px;
+    
 }
 .navbar ul li a:hover{
     color: #BC1F28;
+    
 }
 .navbar ul li a.active{
     color: #BC1F28;
@@ -67,6 +88,7 @@
     color: #000;
     transition: background-color 0.3s ease;
     transition: color 0.3s ease;
+    
 }
 .menu-icon{
     display: none;

@@ -13,7 +13,7 @@ export default function Description() {
       <div className="desc-info">
         <div className="content-image">
           <img
-            src="https://res.cloudinary.com/dpngcztrh/image/upload/v1737328003/better_sxywiw.jpg"
+            src="/images/Untitled_design-removebg-preview.png"
             alt="phone-display"
           />
         </div>

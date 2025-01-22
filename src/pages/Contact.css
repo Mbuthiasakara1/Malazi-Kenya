@@ -1,6 +1,7 @@
 .contact-container {
   text-align: center;
   width: 100%;
+ 
 }
 .contact-container h1 {
   font-size: 30px;
@@ -76,28 +77,30 @@
   }
 
   .info-box {
-    width: 300px; /* Reduce box width */
-    height: auto; /* Allow height to adjust based on content */
-    padding: 16px; /* Reduce padding */
+    width: 300px; 
+    height: auto; 
+    padding: 16px; 
   }
 
   .info-box h3 {
-    font-size: 20px; /* Reduce subheading font size */
+    font-size: 20px; 
   }
 
   .info-box p {
-    font-size: 16px; /* Reduce paragraph font size */
+    font-size: 16px; 
   }
 
   .contact-form-map {
-    flex-direction: column; /* Stack form and map vertically */
-    gap: 32px; /* Add spacing between the form and map */
-    margin: 2em 0; /* Adjust overall margin */
+    flex-direction: column;
+    gap: 32px; 
+    margin: 2em 0; 
   }
 
+
   .map-container iframe {
-    width: 80vw; /* Ensure map is responsive */
+    width: 80vw; 
     height: 350px; /* Adjust height for smaller screens */
+
   }
   .form-container{
     width: 100%;
