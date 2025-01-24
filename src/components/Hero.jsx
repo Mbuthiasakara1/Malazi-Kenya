@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
-import {useNavigate} from "react-router-dom";
+// import {useNavigate} from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
@@ -13,8 +13,8 @@ import './Hero.css'
       "https://res.cloudinary.com/dpngcztrh/image/upload/v1737321362/pic1_n2tdkc.jpg",
       "https://res.cloudinary.com/dpngcztrh/image/upload/v1737323519/blackblock_uihib6.jpg",
     ];
-    const projects = ["Apartment Blocks in Nairobi","Ndagani Modern Market","Kathwana ablution block"];
-    const navigate=useNavigate()
+    // const projects = ["Apartment Blocks in Nairobi","Ndagani Modern Market","Kathwana ablution block"];
+    // const navigate=useNavigate()
 
   return (
     <div className="swiper">
@@ -38,14 +38,14 @@ import './Hero.css'
               />
               <div className="swiper-content">
                 <div className="swiper-text">
-                  <h1>{projects[index]}</h1>
+                  {/* <h1>{projects[index]}</h1> */}
                   <div className="swiper-btn">
-                    <button
+                    {/* <button
                       className="hero-btn"
                       onClick={() => navigate("/portfolio")}
                     >
                       <span>Learn More</span>
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
