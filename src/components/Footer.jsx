@@ -49,7 +49,7 @@ function Footer() {
         <h3>Contact us:</h3>
         <p>
           <MdOutlineEmail />
-          <Link to="mailto:">infomalazikenya@gmail.com</Link>
+          <Link to="mailto:">info@malazikenyaltd.com</Link>
         </p>
         <p>
           <FiPhone />
@@ -57,8 +57,9 @@ function Footer() {
         </p>
         <p>
           <IoLocationOutline />
-          Nairobi <br style={{ marginBottom: "5px" }} />
-          Wichita, Kansas.
+          Westlands,Nairobi,Kenya
+          <br style={{ marginBottom: "5px" }} />
+          Wichita ,Kansas,USA
         </p>
         <div className="socials">
           <FaXTwitter />
