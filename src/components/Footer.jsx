@@ -49,11 +49,13 @@ function Footer() {
         <h3>Contact us:</h3>
         <p>
           <MdOutlineEmail />
-          <Link to="mailto:">info@malazikenyaltd.com</Link>
+          <Link to="mailto:info@malazikenyaltd.com">
+            info@malazikenyaltd.com
+          </Link>
         </p>
         <p>
           <FiPhone />
-          <Link to="tel:">+254 705 26872</Link>
+          <Link to="tel:+254 705 26872">+254 705 26872</Link>
         </p>
         <p>
           <IoLocationOutline />

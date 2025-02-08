@@ -12,16 +12,43 @@ const Navbar = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
-  const handleDownload = () => {
-    const filePath = '/downloads/Malazi_Kenya_Profile.pdf'; // Path to the file in the public folder
-    const link = document.createElement('a');
-    link.href = filePath;
-    link.download = 'Malazi Kenya Profile.pdf'; // Suggested filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const handleDownload=() =>{
+    const filePath = "downloads/Malazi_Kenya_Profile.pdf"
+    const fileName= "Malazi Kenya Profile.pdf"
 
+    // detect IOs
+    const isIOS = /iPad|iPhone|iPOd/.test(navigator.userAgent) && !window.MSStream;
+    try {
+
+      if (isIOS){
+      window.open(filePath, '_blank')
+    }else {
+      const link=document.createElement('a')
+      link.href = filePath
+      link.download = fileName
+
+    //  required for firefox
+    link.target ='_blank'
+    document.body.appendChild(link)
+    link.click()
+
+    //cleanup
+    setTimeout(()=> {
+      document.body.removeChild(link)
+      window.URL.revokeObjectURL(link.href)
+    },100)
+    }
+  }catch (error) {
+    console.error("Download failed:", error);
+    window.open(filePath, "_blank");
+  }
+    }
+    
+  
+ //handle error
+
+ 
+ 
   return (
     <>
       <div className="nav-container">

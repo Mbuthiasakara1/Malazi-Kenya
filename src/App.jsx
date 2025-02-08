@@ -4,7 +4,11 @@ import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Home from "./components/Home"
 import Navbar from "./components/Navbar"
+import { useEffect } from "react"
 const App = () => {
+   useEffect(() => {
+     document.title = "Malazi Kenya";
+   }, []);
   return (
     <div>
       <Navbar />
