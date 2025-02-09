@@ -12,42 +12,60 @@ const Navbar = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
-  const handleDownload=() =>{
-    const filePath = "downloads/Malazi_Kenya_Profile.pdf"
-    const fileName= "Malazi Kenya Profile.pdf"
+    const handleDownload = async () => {
+      const filePath = "/downloads/Royal assets ltd.pdf";
+      const fileName = "Malazi_Kenya_Profile.pdf";
 
-    // detect IOs
-    const isIOS = /iPad|iPhone|iPOd/.test(navigator.userAgent) && !window.MSStream;
-    try {
+      // Detect iOS devices
+      const isIOS =
+        /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-      if (isIOS){
-      window.open(filePath, '_blank')
-    }else {
-      const link=document.createElement('a')
-      link.href = filePath
-      link.download = fileName
+      try {
+        if (isIOS) {
+          // For iOS devices, fetch the file first
+          const response = await fetch(filePath);
+          const blob = await response.blob();
 
-    //  required for firefox
-    link.target ='_blank'
-    document.body.appendChild(link)
-    link.click()
+          // Create a blob URL
+          const blobUrl = window.URL.createObjectURL(blob);
 
-    //cleanup
-    setTimeout(()=> {
-      document.body.removeChild(link)
-      window.URL.revokeObjectURL(link.href)
-    },100)
-    }
-  }catch (error) {
-    console.error("Download failed:", error);
-    window.open(filePath, "_blank");
-  }
-    }
-    
-  
- //handle error
+          // Create an invisible iframe
+          const iframe = document.createElement("iframe");
+          iframe.style.display = "none";
+          document.body.appendChild(iframe);
 
- 
+          // Set iframe src to blob URL
+          iframe.src = blobUrl;
+
+          // Clean up
+          setTimeout(() => {
+            document.body.removeChild(iframe);
+            window.URL.revokeObjectURL(blobUrl);
+          }, 1000);
+
+          // Also open in new tab as fallback
+          window.open(filePath, "_blank");
+        } else {
+          // For non-iOS devices, use standard download
+          const link = document.createElement("a");
+          link.href = filePath;
+          link.download = fileName;
+          document.body.appendChild(link);
+          link.click();
+
+          // Clean up
+          setTimeout(() => {
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(link.href);
+          }, 100);
+        }
+      } catch (error) {
+        console.error("Download failed:", error);
+        // Fallback to opening in new tab
+        window.open(filePath, "_blank");
+      }
+    };
+
  
   return (
     <>
